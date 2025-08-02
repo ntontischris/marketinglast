@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Agent Idea Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Google Gemini Marketing Agent</h1>
+            <p>Generate fresh content ideas and drafts in seconds.</p>
+            <a href="/history" class="nav-link">View Campaign History &#8594;</a>
+        </header>
+        <main>
+            <form id="idea-form">
+                <input type="text" id="topic-input" placeholder="e.g., 'The future of AI'" required>
+                <button type="submit">Generate Ideas</button>
+            </form>
+            <div id="results-container">
+                <!-- Ideas Section -->
+                <div id="ideas-section" class="hidden">
+                    <div id="ideas-loader" class="hidden"></div>
+                    <h2>Generated Ideas</h2>
+                    <p class="subtitle">Click 'Write Draft' next to an idea to generate content.</p>
+                    <ul id="ideas-list"></ul>
+                </div>
+
+                <!-- Draft Section -->
+                <div id="draft-section" class="hidden">
+                    <hr>
+                    <h2>Generated Draft</h2>
+                    <div id="draft-loader" class="hidden"></div>
+                    <div id="draft-output" class="output-box"></div>
+                    <!-- Container for adaptation buttons and results -->
+                    <div id="specialist-section" class="hidden">
+                        <div id="specialist-buttons-container" class="button-container"></div>
+                        <div id="specialist-results-container"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by Gemini & LangGraph</p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
