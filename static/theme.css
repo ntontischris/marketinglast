@@ -1,0 +1,166 @@
+/* General Theme & Fonts */
+body, .gradio-container {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Dark theme container */
+.gradio-container {
+    background: rgba(16, 20, 30, 0.95);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 30px;
+}
+
+/* Headings and Titles */
+h1, h2, h3 {
+    color: #64b5f6; /* Light blue for better contrast on dark background */
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.step-header h3 {
+    padding: 12px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-left: 5px solid #64b5f6;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.gr-button {
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(100, 181, 246, 0.3) !important;
+}
+
+.gr-button.gr-button-primary {
+    background: linear-gradient(135deg, #1e88e5, #1565c0) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+}
+
+.gr-button.gr-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(30, 136, 229, 0.4);
+    background: linear-gradient(135deg, #2196f3, #1976d2) !important;
+}
+
+/* Textboxes and Inputs */
+.gr-textbox, .gr-textarea textarea, .gr-dropdown select {
+    border-radius: 8px !important;
+    border: 1px solid rgba(100, 181, 246, 0.3) !important;
+    background-color: rgba(30, 41, 59, 0.8) !important;
+    color: #ffffff !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gr-textbox:focus, .gr-textarea textarea:focus, .gr-dropdown select:focus {
+    border-color: #64b5f6 !important;
+    box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.25) !important;
+    background-color: rgba(30, 41, 59, 0.9) !important;
+}
+
+/* Tab Navigation */
+.tabs > .tab-nav > button {
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 8px 8px 0 0 !important;
+    border-bottom: 2px solid transparent !important;
+    font-weight: 600;
+    color: #e3f2fd;
+    transition: all 0.3s ease;
+}
+
+.tabs > .tab-nav > button.selected {
+    background: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+    border-bottom: 2px solid #64b5f6 !important;
+    color: #ffffff !important;
+}
+
+/* Custom HTML Blocks */
+.section-header {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.section-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #64b5f6;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #e3f2fd;
+    margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.8), rgba(42, 82, 152, 0.8));
+    border-radius: 12px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #e3f2fd;
+}
+
+.footer strong {
+    color: #64b5f6;
+}
+
+/* Additional Dark Theme Improvements */
+.gr-markdown {
+    color: #ffffff !important;
+    background: rgba(30, 41, 59, 0.4) !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    border: 1px solid rgba(100, 181, 246, 0.2) !important;
+}
+
+.gr-dropdown {
+    background: rgba(30, 41, 59, 0.8) !important;
+    border: 1px solid rgba(100, 181, 246, 0.3) !important;
+    border-radius: 8px !important;
+}
+
+.gr-dropdown option {
+    background: rgba(30, 41, 59, 0.9) !important;
+    color: #ffffff !important;
+}
+
+/* Status and Output Areas */
+.gr-form {
+    background: rgba(30, 41, 59, 0.3) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    border: 1px solid rgba(100, 181, 246, 0.2) !important;
+}
+
+/* Image Display */
+.gr-image {
+    border-radius: 12px !important;
+    border: 2px solid rgba(100, 181, 246, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
